@@ -14,9 +14,7 @@ export const PeopleTable: React.FC<Props> = ({ people }) => {
   const { slug } = useParams();
 
   useEffect(() => {
-    if (slug) {
-      setSelectedSlug(slug);
-    }
+    setSelectedSlug(slug ?? null);
   }, [slug, setSelectedSlug]);
 
   return (
