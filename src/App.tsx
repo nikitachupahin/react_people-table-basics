@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import '../src/App.scss';
+import './App.scss';
 import { Navigation } from './components/Navigation';
 
 export const App = () => (
